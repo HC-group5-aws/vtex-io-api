@@ -6,7 +6,7 @@ export default class Products extends JanusClient {
     super(context, options)
   }
 
-  public async getProducts(params: number): Promise<object> {
+  public async getProducts(params: number): Promise<string> {
     return this.http.get(params.toString(), {
       metric: 'Products-get',
     })
@@ -14,7 +14,7 @@ export default class Products extends JanusClient {
 
   public async getProductsWithHeaders(
     params: number
-  ): Promise<IOResponse<object>> {
+  ): Promise<IOResponse<string>> {
     return this.http.getRaw(params.toString(), {
       metric: 'Products-get-raw',
     })

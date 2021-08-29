@@ -9,6 +9,10 @@
     "products": {
       "path": "/_v/products",
       "public": true
+    },
+    "productsId": {
+      "path": "/_v/productsId/:id",
+      "public": true
     }
   }
 }
