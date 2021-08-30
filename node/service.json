@@ -11,7 +11,11 @@
       "public": true
     },
     "productsId": {
-      "path": "/_v/productsId/:id",
+      "path": "/_v/productsId/:code",
+      "public": true
+    },
+    "priceId": {
+      "path": "/_v/price",
       "public": true
     }
   }

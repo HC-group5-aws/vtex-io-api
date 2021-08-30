@@ -4,6 +4,7 @@ import { Clients } from './clients'
 import { products } from './middlewares/products'
 import { productsId } from './middlewares/productsId'
 import { validate } from './middlewares/validate'
+import { price } from './middlewares/price'
 
 const TIMEOUT_MS = 800
 
@@ -41,6 +42,9 @@ export default new Service({
     }),
     productsId: method({
       GET: [validate, productsId],
+    }),
+    priceId: method({
+      GET: [price],
     }),
   },
 })

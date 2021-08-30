@@ -1,13 +1,11 @@
 export async function productsId(ctx: Context, next: () => Promise<any>) {
   const {
-    vtex: {
-      route: { params },
-    },
+    state: { code },
     clients: { catalog },
   } = ctx
-  const { code } = params
-  console.log(code)
-  const data = await catalog.getSkuById(code.toString())
+
+  //   const data = await catalog.(code.toString())
+  const data = await catalog.getSkuContext(code.toString())
 
   ctx.body = data
 
