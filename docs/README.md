@@ -15,20 +15,20 @@ Exemplo de Client VTEX usado, Catalogo com metodos de getProductsAndSkus.
 
 ### Nossas routes on _service.json_
 
-```json
+~~~jsonc
    "products": {
-      "path": "/_v/products",  *Retorna um Array com os ID product e Sku ID para usarmos na consulta da proxima rota.*
+      "path": "/_v/products",  /*Retorna um Array com os ID product e Sku ID para usarmos na consulta da proxima rota.*/
       "public": true
     },
     "productsId": {
-      "path": "/_v/productsId/:code", *Retorna um Objeto com os As informacoes do product e numero Sku ID, usaremos as info e o sku para consultar preço*
+      "path": "/_v/productsId/:code", /*Retorna um Objeto com os As informacoes do product e numero Sku ID, usaremos as info e o sku para consultar preço*/
       "public": true
     },
     "priceId": {
-      "path": "/_v/price", *Retorna um Objeto com os As informacoes relativo ao preço do produto entre outras info, passado o SkuID como queryParams*
+      "path": "/_v/price", /*Retorna um Objeto com os As informacoes relativo ao preço do produto entre outras info, passado o SkuID como queryParams*/
       "public": true
     }
-```
+~~~
 
 ### Other example apps
 
