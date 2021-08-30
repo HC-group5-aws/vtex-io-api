@@ -35,6 +35,13 @@
         "host": "*.myvtex.com",
         "path": "*/api/catalog/pvt/product/*"
       }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "*/hiringcoders202105/pricing/*"
+      }
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
