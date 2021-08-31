@@ -15,7 +15,7 @@
       "public": true
     },
     "priceId": {
-      "path": "/_v/price",
+      "path": "/_v/price/:code",
       "public": true
     }
   }

@@ -44,7 +44,7 @@ export default new Service({
       GET: [validate, productsId],
     }),
     priceId: method({
-      GET: [price],
+      GET: [validate, price],
     }),
   },
 })
